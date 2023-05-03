@@ -17,9 +17,31 @@ Luigi.setConfig({
             viewUrl: '/assets/basicMicroFrontend.html#one'
           },
           {
-            pathSegment: 'two',
-            label: 'Section two',
-            viewUrl: '/assets/basicMicroFrontend.html#two'
+            pathSegment: 'nuxt',
+            label: 'Nuxt3 Page',
+            viewUrl: 'http://localhost:6010/',
+            virtualTree: false,
+            loadingIndicator: {
+              enabled: false
+            }
+          },
+          {
+            pathSegment: 'gatsby',
+            label: 'Gatsby Page',
+            viewUrl: 'http://localhost:6020/',
+            virtualTree: false,
+            loadingIndicator: {
+              enabled: false
+            }
+          },
+          {
+            pathSegment: 'qwik',
+            label: 'Qwik Page',
+            viewUrl: 'http://localhost:6030/',
+            virtualTree: false,
+            loadingIndicator: {
+              enabled: false
+            }
           }
         ]
       }
@@ -31,7 +53,7 @@ Luigi.setConfig({
      * For path routing, set to false
      * For hash routing, set to true
      */
-    useHashRouting: true
+    useHashRouting: false
   },
   settings: {
     appLoadingIndicator: {

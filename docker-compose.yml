@@ -9,7 +9,7 @@ services:
     ports:
       - 4200:4200
     command:
-      sh -c 'npm i && ng serve --host 0.0.0.0'
+      sh -c 'npm i && ng serve -o --host 0.0.0.0'
     environment:
       - CHOKIDAR_USEPOLLING=true
     tty: true
